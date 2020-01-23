@@ -26,3 +26,17 @@ h2{
     border-radius: 50%;
     width: 200;
 }
+body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+ #orange-text{
+    color:orange;
+  }
