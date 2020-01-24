@@ -1,0 +1,5 @@
+body{background-color: blueviolet;
+}
+@media :(min-width:300px;){
+    body{background-color: coral;}
+}
