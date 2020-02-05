@@ -129,6 +129,16 @@ function lookUpProfile(name, prop){
   if (contacts[i].firstName === name){
     console.log("Cool found match!");
     console.log(contacts[i]);
+    if (contacts[i].hasOwnProperty(prop)){
+      console.log("Found  property", prop);
+      return contacts[i][prop];
+    }else {
+        return "No such property";
+    }
   }
 }
+return "No such contact";
 }
+console.log(lookUpProfile("Akira", "likes"));
+console.log(lookUpProfile("Akira", "dislikes"));
+console.log(lookUpProfile("Valdis", "dislikes"));
