@@ -1,0 +1,33 @@
+div{
+    width:200px;
+    height:200px;
+    background-color: chartreuse;
+    clip-path: circle (40%);
+}
+
+.myclip{
+  clip-path: circle(40%);
+}
+  .myclip1{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  }
+.round{
+    display: inline-block;
+    width:30px;
+    height:30px;
+    background: red;
+    border-radius: 100%;
+    margin: 10px;
+    
+  }
+  
+  .ellipse,.stadium{
+    width: 60px;
+  }
+  .grad{
+  background-image: linear-gradient(red, rgb(0, 174, 255) 50%, red)
+}
+
+  .stadium{
+    border-radius: 9999px;
+  }
