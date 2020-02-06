@@ -10,8 +10,8 @@ for (let i=0; i < numThrows; i++) {
 }
  return total / numThrows;
 } 
-const numThrows = 100000;
+const numThrows = 1000;
 let result = getAverage(numThrows);
 
-let myParagraph = document.querySelector ("#answer");
+let myParagraph = document.querySelector("#answer");
 myParagraph.textContent = `Average throw value is ${result}`;
