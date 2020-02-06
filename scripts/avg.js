@@ -28,7 +28,7 @@ myParagraph.textContent = `Average throw value is ${myParagraph.myResult}`;
 // const myButton = document.querySelector(".pretty-button");
 // const myButton = document.querySelector("button");
 const myButton = document.querySelector("#submitBtn");
-const delButton = docuent.querySelector("#deleteBtn");
+const delButton = document.querySelector("#deleteBtn");
 //const myButton = document.getElementById("submitBtn");
 // there is also document.getElementsByClassName
 //document.getElementsByTagName
@@ -58,8 +58,8 @@ while (element.firstChild){
 }
 }
 //can only have one click
-myButton.click = onButtonClick;
+myButton.onclick = onButtonClick;
 delButton.onclick = onDelete;
 //can have many additional events handled by addEventListener
-// myButton.addEventListener("click", onButtonClick);
+//myButton.addEventListener("click", onButtonClick);
 // document.addEventListener("click", () => console.log("Whole Doc clicked"));
