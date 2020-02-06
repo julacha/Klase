@@ -1,7 +1,8 @@
+///Пример: Случайное целое между min и max
+//использование Math.round() даст неравномерное распределение!
 function randomRange(myMin, myMax) {
-
     return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
-  }
+  } 
 function getAverage(numThrows) {
     //write function to get an avarage value from dice throws
 let total = 0;
