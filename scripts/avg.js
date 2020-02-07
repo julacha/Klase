@@ -23,19 +23,25 @@ let myParagraph = document.querySelector("#answer");
 // let myParagraph = document.querySelector("p");
 myParagraph.myResult = result;
 myParagraph.textContent = `Average throw value is ${myParagraph.myResult}`;
-
+//1
 //Many ways of selecting a single buton
-// const myButton = document.querySelector(".pretty-button");
-// const myButton = document.querySelector("button");
-const myButton = document.querySelector("#submitBtn");
-const delButton = document.querySelector("#deleteBtn");
-//const myButton = document.getElementById("submitBtn");
-// there is also document.getElementsByClassName
-//document.getElementsByTagName
-
-myButton.style.backgroundColor = "orange";
+//const myButton = document.querySelector(".pretty-button");
 //preferable to add a class instead of doing inline
 myButton.classList.add("big-button");
+myButton.style.backgroundColor = "orange";
+//const myButton = document.querySelector("button");
+const myButton = document.querySelector("#submitBtn");
+//const myButton = document.getElementById("submitBtn");
+//there is also document.getElementsByClassName
+//document.getElementsByTagName
+
+//2
+myButton.addEventListener("click", onButtonClick);
+document.addEventListener("click", () => console.log("Whole Doc clicked"));
+
+
+const delButton = document.querySelector("#deleteBtn");
+
 
 const myInput = document.querySelector(".num-input");
 console.log(`My value is ${myInput.value}`);
@@ -61,5 +67,4 @@ while (element.firstChild){
 myButton.onclick = onButtonClick;
 delButton.onclick = onDelete;
 //can have many additional events handled by addEventListener
-//myButton.addEventListener("click", onButtonClick);
-// document.addEventListener("click", () => console.log("Whole Doc clicked"));
+
