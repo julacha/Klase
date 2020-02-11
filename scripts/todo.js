@@ -1,7 +1,7 @@
 console.log ("Starting todo app");
 const descInp = document.getElementById("desc");
 const jobsCont = document.querySelector(".jobs-cont");
-const clearBtn = document.getElementById("#clear-btn");
+const clearBtn = document.querySelector("#clear-btn");
 
 function onCreate(){
     console.log("Adding new TODO item. Using description",descInp.value);
@@ -23,8 +23,8 @@ for (let i = 0; i < jobs.lenght; i++);
 
 function onClear(){
 console.log("Clear all elements");
-/* while (jobsCont.firstChild){
-jobsCont.removeChild(jobsCont.firstChild); */
+while (jobsCont.firstChild){
+jobsCont.removeChild(jobsCont.firstChild);
 }
 
 function addListeners(){
